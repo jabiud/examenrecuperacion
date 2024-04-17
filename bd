@@ -1,0 +1,18 @@
+-- Crear la base de datos "VentasTurismo" 
+CREATE DATABASE VentasTurismo;
+GO
+
+-- Cambiar al contexto de la base de datos "VentasTurismo"
+USE VentasTurismo;
+GO
+
+-- Crear la tabla "Clientes"
+CREATE TABLE Clientes (
+    ID INT PRIMARY KEY IDENTITY(1,1),
+    Nombre NVARCHAR(100) NOT NULL,
+    Edad INT NOT NULL,
+    TipoCliente NVARCHAR(50) NOT NULL,
+    CantidadPersonas INT NOT NULL,
+    MontoPagar DECIMAL(10, 2) NOT NULL
+);
+GO
